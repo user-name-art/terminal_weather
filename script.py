@@ -12,8 +12,9 @@ def get_weather_by_city(city):
     url = 'https://wttr.in/{}?nTqu&?m&?M&lang=ru'.format(city)
     response = requests.get(url)
     response.raise_for_status()
-    print(response.text)
+    return response.text
 
 
-for city in cities:
-    get_weather_by_city(city)
+if __name__ == '__main__':
+    for city in cities:
+        print(get_weather_by_city(city))
