@@ -19,6 +19,11 @@ pip install -r requirements.txt
 If necessary, change the global variables **CITIES** (list of cities) and **REQUEST_PARAMETRS** (dictionary with query parameters).
 The full list of parameters can be found in the documentation on [wttr.in](https://wttr.in/:help).
 
+### How to run
+
+```
+python script.py
+```
 ### Project Goals
 
 This code was written for educational purposes as part of an online course for web developers at [dvmn.org](https://dvmn.org/).
