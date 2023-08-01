@@ -1,7 +1,7 @@
 import requests
 
 
-cities = [
+CITIES = [
     'Лондон',
     'Шереметьево',
     'Череповец',
@@ -16,5 +16,5 @@ def get_weather_by_city(city):
 
 
 if __name__ == '__main__':
-    for city in cities:
+    for city in CITIES:
         print(get_weather_by_city(city))
