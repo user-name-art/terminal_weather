@@ -15,9 +15,9 @@ REQUEST_PARAMETRS = {
 }
 
 
-def get_weather_by_city(city, REQUEST_PARAMETRS):
+def get_weather_by_city(city, request_parametrs):
     url = 'https://wttr.in/{}'.format(city)
-    response = requests.get(url, params=REQUEST_PARAMETRS)
+    response = requests.get(url, params=request_parametrs)
     response.raise_for_status()
     return response.text
 
